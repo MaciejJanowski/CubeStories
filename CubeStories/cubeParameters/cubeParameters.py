@@ -2,13 +2,13 @@ import pandas as pd
 
 class cubeParameters(object):
 
-    def __init__(self,cube="",dimensions=[],measures=[],hierdimensions=[]):
+    def __init__(self,**kwargs):
         self.data=pd.DataFrame()
         self.datastories=None
-        self.cube=cube
-        self.dimensions=dimensions
-        self.hierdimensions=hierdimensions
-        self.measures=measures
+        self.cube=kwargs.get("cube")
+        self.dimensions=kwargs.get("dimensions")
+        self.hierdimensions=kwargs.get("hierdimensions")
+        self.measures=kwargs.get("measures")
         
     def __radd__(self, cubestory):
         try:

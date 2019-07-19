@@ -1,4 +1,4 @@
-from .storypattern import storyPattern
+from .storyPattern import storyPattern
 from ..cubeParameters import cubeParameters
 
 

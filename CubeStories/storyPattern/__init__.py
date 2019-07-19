@@ -10,3 +10,4 @@ from .startBigDrillDown import startBigDrillDown
 from .startSmallZoomOut import startSmallZoomOut
 from .extComparison import extComparison
 from .narrChangeOT import narrChangeOT
+from .storyPattern import storyPattern

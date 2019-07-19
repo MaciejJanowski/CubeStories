@@ -9,4 +9,4 @@ class metaData(object):
             self.datastories=datastories.DataStoryPattern(sparqlEndpoint=kwargs.get("sparqlEndPointUrl"),
                                                             jsonmetadata=jsonfile)
         except Exception as e:
-            raise Exception("Metadata/Endpoint error: " +e)
+            raise Exception("Metadata/Endpoint error: " +repr(e))

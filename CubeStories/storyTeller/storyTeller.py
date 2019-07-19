@@ -7,12 +7,15 @@ from ..metaData import metaData
 class storyTeller(object):
 
     def __init__(self, metadataparameters,cubeparameters,patternparameters):
-        self.storytelling=metaData(**metadataparameters)+cubeParameters(**cubeparameters) ###Initiate metadata
+        self.meta=metaData(**metadataparameters)
+        self.cubeparams=cubeParameters(**cubeparameters)
+        self.storytelling=None
         self.analysispipeline=patternparameters
     
 
     def tellStory(self):
         analysisList=[]
+        self.storytelling=self.meta+self.cubeparams
         try:
             for patanalysis in self.analysispipeline:
                 if(patanalysis=="MeasCount"):
