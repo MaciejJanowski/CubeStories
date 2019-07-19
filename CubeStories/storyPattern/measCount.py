@@ -13,7 +13,6 @@ class measCount(storyPattern):
             self.measures=patternAnalysis.measures
             self.hierdimensions=patternAnalysis.hierdimensions
             data=patternAnalysis.datastories
-            print(patternAnalysis.data)
             self.data=data.MCounting(
                             df=patternAnalysis.data,
                             cube=patternAnalysis.cube,
