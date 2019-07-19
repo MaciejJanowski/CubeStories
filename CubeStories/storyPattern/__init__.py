@@ -8,3 +8,5 @@ from .profOutliers import profOutliers
 from .intComparison import intComparison
 from .startBigDrillDown import startBigDrillDown
 from .startSmallZoomOut import startSmallZoomOut
+from .extComparison import extComparison
+from .narrChangeOT import narrChangeOT
