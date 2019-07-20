@@ -16,7 +16,7 @@ class profOutliers(storyPattern):
                             meas=patternAnalysis.measures,
                             hierdims=patternAnalysis.hierdimensions,
                             df=patternAnalysis.data,
-                            dim_to_dissect=self.params["display_type"])
+                            display_type=self.params["display_type"])
             
             #print(self.data)
             #print(self.params)
