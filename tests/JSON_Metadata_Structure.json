@@ -1,0 +1,250 @@
+{
+    "PopulationPrinicipalStatus" : {
+		"title":"PopulationPrinicipalStatus",
+		"dataset_structure":"http://data.cso.ie/census-2011/structure/population-principal-status",
+        "dimensions":{
+            "Gender":{
+                "dimension_title":"Gender",
+                "dimension_url":"http://data.cso.ie/census-2011/property/gender",
+                "dimension_prefix":"http://data.cso.ie/census-2011/classification/gender/"
+            },
+            "EconomicStatus":{
+                "dimension_title":"EconomicStatus",
+                "dimension_url":"http://data.cso.ie/census-2011/property/principal-economic-status",
+                "dimension_prefix":"http://data.cso.ie/census-2011/classification/principal-economic-status/"
+            }
+        },
+		"hierarchical_dimensions":{
+			"RefArea": {
+				"dimension_title":"RefArea",
+				"dimension_url":"http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+				"dimension_prefix":"http://data.cso.ie/census-2011/classification/areas/",
+				"dimension_levels":
+				{
+					"CTY":{
+						"description":"per County",
+						"granularity":2
+					},
+					"DC":
+					{
+						"description":"per Dail Constituency",
+						"granularity":3
+					},
+					"ED":{
+						"description":"per Electoral Division",
+						"granularity":4
+					},
+					"GA":
+					{
+						"description":"per Gaeltacht Area",
+						"granularity":5
+					},
+					"LEA":{
+						"description":"per Local Electoral Area",
+						"granularity":6
+					},
+					"LT":{
+						"description":"per Legal Town and City",
+						"granularity":7
+					},
+					"PA":{
+						"description":"per Dublin Parish",
+						"granularity":8
+					},
+					"PR":{
+						"description":"per Province",
+						"granularity":9
+					},
+					"RA":{
+						"description":"per Regional Authority Area",
+						"granularity":2
+					},
+					"RE":{
+						"description":"per Dioceses",
+						"granularity":11
+					},
+					"SA":{
+						"description":"per Small Area",
+						"granularity":12
+					},
+					"ST":{
+						"description":"per Town/City",
+						"granularity":13
+					}
+				}
+			}
+			},
+		"measures":{
+			"Population":{
+			"measure_title":"Population",
+			"measure_url":"http://data.cso.ie/census-2011/property/population-aged-15-years-and-over"
+			}
+
+		}
+    },
+    "PopulationHighestEducation":{
+		"title":"PopulationHighestEducation",
+        "dataset_structure":"http://data.cso.ie/census-2011/structure/population-highest-education",
+        "dimensions":{
+			"Gender":{
+			"dimension_title":"Gender",
+			"dimension_url":"http://data.cso.ie/census-2011/property/gender",
+			"dimension_prefix":"http://data.cso.ie/census-2011/classification/gender/"
+			},
+			"HighestEducationLevel":{
+				"dimension_title":"HighestEducationLevel",
+			"dimension_url":"http://data.cso.ie/census-2011/property/highest-level-of-education-completed",
+			"dimension_prefix":"http://data.cso.ie/census-2011/classification/highest-level-of-education-completed/"
+			}
+		},
+		"hierarchical_dimensions":{
+			"RefArea":{
+				"dimension_title":"RefArea",
+				"dimension_url":"http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+				"dimension_prefix":"http://data.cso.ie/census-2011/classification/areas/",
+				"dimension_levels":
+				{
+					"CTY":{
+						"description":"per County",
+						"granularity":2
+					},
+					"DC":
+					{
+						"description":"per Dail Constituency",
+						"granularity":3
+					},
+					"ED":{
+						"description":"per Electoral Division",
+						"granularity":4
+					},
+					"GA":
+					{
+						"description":"per Gaeltacht Area",
+						"granularity":5
+					},
+					"LEA":{
+						"description":"per Local Electoral Area",
+						"granularity":6
+					},
+					"LT":{
+						"description":"per Legal Town and City",
+						"granularity":7
+					},
+					"PA":{
+						"description":"per Dublin Parish",
+						"granularity":8
+					},
+					"PR":{
+						"description":"per Province",
+						"granularity":9
+					},
+					"RA":{
+						"description":"per Regional Authority Area",
+						"granularity":2
+					},
+					"RE":{
+						"description":"per Dioceses",
+						"granularity":11
+					},
+					"SA":{
+						"description":"per Small Area",
+						"granularity":12
+					},
+					"ST":{
+						"description":"per Town/City",
+						"granularity":13
+					}
+				}
+			}
+		},
+		"measures":{
+			"Population15OrOver":{
+				"measure_title":"Population15OrOver",
+				"measure_url":"http://data.cso.ie/census-2011/property/population-aged-15-years-and-over"
+			}
+		}
+    },
+	"PersonsIndustry":{
+		"title":"PersonsIndustry",
+        "dataset_structure":"http://data.cso.ie/census-2011/structure/persons-industry",
+        "dimensions":{
+		"Gender":{
+			"dimension_title":"Gender",
+          "dimension_url":"http://data.cso.ie/census-2011/property/gender",
+		  "dimension_prefix":"http://data.cso.ie/census-2011/classification/gender/"
+        },
+        "Industry":{
+			"dimension_title":"Industry",
+          "dimension_url":"http://data.cso.ie/census-2011/property/industry",
+          "dimension_prefix":"http://data.cso.ie/census-2011/classification/industry/"
+        }},
+	"hierarchical_dimensions":{
+		"RefArea":{
+			"dimension_title":"RefArea",
+          "dimension_url":"http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+          "dimension_prefix":"http://data.cso.ie/census-2011/classification/areas/",
+		  "dimension_levels":
+		  {
+			"CTY":{
+				"description":"per County",
+				"granularity":2
+			},
+			"DC":
+			{
+				"description":"per Dail Constituency",
+				"granularity":3
+			},
+			"ED":{
+				"description":"per Electoral Division",
+				"granularity":4
+			},
+			"GA":
+			{
+				"description":"per Gaeltacht Area",
+				"granularity":5
+			},
+			"LEA":{
+				"description":"per Local Electoral Area",
+				"granularity":6
+			},
+			"LT":{
+				"description":"per Legal Town and City",
+				"granularity":7
+			},
+			"PA":{
+				"description":"per Dublin Parish",
+				"granularity":8
+			},
+			"PR":{
+				"description":"per Province",
+				"granularity":9
+			},
+			"RA":{
+				"description":"per Regional Authority Area",
+				"granularity":2
+			},
+			"RE":{
+				"description":"per Dioceses",
+				"granularity":11
+			},
+			"SA":{
+				"description":"per Small Area",
+				"granularity":12
+			},
+			"ST":{
+				"description":"per Town/City",
+				"granularity":13
+			}
+		}
+        }
+        },
+		"measures":{
+		"PersonsAtWork":{
+			"measure_title":"PersonsAtWork",
+			"measure_url":"http://data.cso.ie/census-2011/property/persons-at-work"
+		}}
+        }
+    }
+
+
+
