@@ -21,7 +21,7 @@ class measCount(storyPattern):
                             hierdims=patternAnalysis.hierdimensions,
                             count_type=self.params["count_type"])
             
-            print(self.data)
+            #print(self.data)
             #print(self.data.columns)
             #print(data.metaDataDict[patternAnalysis.cube])
             self.datastories=patternAnalysis.datastories
