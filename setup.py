@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 
 setup(name='cubestories',
-      version='0.3.4',
+      version='0.3.5',
       url='https://github.com/MaciejJanowski/CubeStories',
       license='MIT',
       author='Maciej Janowski',
