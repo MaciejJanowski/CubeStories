@@ -16,16 +16,23 @@ cubeparameters={
         }
 }
 
-AnalysisPipeline={  ##Dictionary pair: [Pattern Key]:[List of Pattern Parameters]
-    "LeagueTab":{  #League Table 
+#cubeparameters=dict()
 
-        "columns_to_order":["Children"],
-        "order_type":"asc",
-        "number_of_records":5
-    },
-    "DissFact":{
+AnalysisPipeline={  ##Dictionary pair: [Pattern Key]:[List of Pattern Parameters]
+    
+    "LeagueTab":{   
+       "columns_to_order":["FamilySize"],
+       "order_type":"desc",
+       "number_of_records":20
+   },
+   "DissFact":{
         "dim_to_dissect":"RefArea"
-    }
+    },
+   "MeasCount":{
+       "count_type":"min"
+   }
+
+
 }
 
 a=storyTeller(metadataparameters=metdadataparameters,
@@ -35,4 +42,6 @@ a=storyTeller(metadataparameters=metdadataparameters,
 
 a.tellStory()
 
-print(a.showStory())
+x=(a.showStory())
+
+print(x["LeagueTab"])

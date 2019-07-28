@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 
 setup(name='cubestories',
-      version='0.3.1',
+      version='0.3.2',
       url='https://github.com/MaciejJanowski/CubeStories',
       license='MIT',
       author='Maciej Janowski',
@@ -14,7 +14,7 @@ setup(name='cubestories',
       packages=find_packages(exclude=["tests"]),
       #package_dir={"CubeStories":"CubeStories"},
       install_requires=['SPARQLWrapper',
-                        'sparql_dataframe','pandas',
+                        'sparql_dataframe','pandas==0.24.2',
                         'datastories',
                         'numpy','scipy'],
       long_description=open('README.md').read(),

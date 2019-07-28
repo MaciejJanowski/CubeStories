@@ -1,4 +1,5 @@
-from .storyPattern import storyPattern
+from .storyPattern import  storyPattern
+
 from ..cubeParameters import cubeParameters
 import pandas as pd
 
@@ -11,7 +12,7 @@ class exploreIntersection(storyPattern):
             self.hierdimensions=patternAnalysis.hierdimensions
             data=patternAnalysis.datastories
             if isinstance(patternAnalysis.data,pd.DataFrame) and patternAnalysis.data.empty:
-                self.data=data.exploreIntersection(analysis_type=self.params["dim_to_explore"])
+                self.data=data.ExploreIntersection(dim_to_explore=self.params["dim_to_explore"])
             else:
                 raise ValueError("Explore Intersection can be perfomed as initial pattern only")
            
