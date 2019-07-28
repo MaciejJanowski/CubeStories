@@ -2,7 +2,7 @@ from CubeStories import storyTeller
 
 metdadataparameters={
     "sparqlEndPointUrl":"http://macjan.datascienceinstitute.ie:8080/sparql", #endpoint of url
-    "jsonMetaDataFile":"tests/JSON_Metadata_Structure.json" #JSON file with metadata
+    "jsonMetaDataFile":"JSON_Metadata_Structure.json" #JSON file with metadata
 }
 
 cubeparameters={
