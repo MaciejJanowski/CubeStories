@@ -10,7 +10,7 @@ class intComparison(storyPattern):
             self.measures=patternAnalysis.measures
             self.hierdimensions=patternAnalysis.hierdimensions
             data=patternAnalysis.datastories
-            self.data=data.AnalysisByCategory(cube=patternAnalysis.cube,
+            self.data=data.InternalComparison(cube=patternAnalysis.cube,
                             dims=patternAnalysis.dimensions,
                             meas=patternAnalysis.measures,
                             hierdims=patternAnalysis.hierdimensions,
