@@ -3,6 +3,8 @@ CubeStories allows querying Linked Open Statistical by Providing parameters in a
 
 High-level encapsulation of datastories librabry [DataStories repo](https://github.com/MaciejJanowski/DataStoryPatternLibrary)
 
+Test sripts are available at: [Test repor](https://github.com/MaciejJanowski/CubeStoriesTesting)
+
 ### Installation
 ```python
 pip install cubestories
@@ -20,8 +22,8 @@ Library implements 3 artifacts required for Data analysis
 * Metadata Parameters - metadata required for SPARQL queries
 ```json
     {
-    "sparqlEndPointUrl":"[SPARQL ENDPOINT URL]", #endpoint of url
-    "jsonMetaDataFile":"[directory of JSON file with metadata]" #JSON file with metadata
+    "sparqlEndPointUrl":"[SPARQL ENDPOINT URL]", 
+    "jsonMetaDataFile":"[directory of JSON file with metadata]" 
 }
 ```
 
@@ -46,9 +48,7 @@ Library implements 3 artifacts required for Data analysis
         "parameter1":["list of values"],
         "parameter2":"value"
     },
-    .
-    .
-    .
+    
     "PatternName":{
         "pattern1":"pattern1 value",
         "pattern2":["list of values"]
@@ -316,8 +316,8 @@ As an output, data will be retrieved in a form of a dictionary, where each datas
 
 ```json
 "StSmallZoomOut":{
-    "hierdim_zoom_out":{ #Hierarchical dimension with levels to be retrieved
-        "DimKey":["dimlevel1key","dimlevel2key","dimlevel3key"] #Pair [HierarchicalDimensionKey]:[List of Levels to retrieved]
+    "hierdim_zoom_out":{ 
+        "DimKey":["dimlevel1key","dimlevel2key","dimlevel3key"] 
         }
 }
  ```
