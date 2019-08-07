@@ -1,6 +1,8 @@
 # CubeStories
 CubeStories allows querying Linked Open Statistical by Providing parameters in a form of Python dictionaries(JSON).
 
+Reserach paper underpinning the implementation [Research paper](https://www.researchgate.net/publication/333227519_Mediating_Open_Data_Consumption_-_Identifying_Story_Patterns_for_Linked_Open_Statistical_Data)
+
 High-level encapsulation of datastories librabry [DataStories repo](https://github.com/MaciejJanowski/DataStoryPatternLibrary)
 
 Test sripts are available at: [Test repor](https://github.com/MaciejJanowski/CubeStoriesTesting)
