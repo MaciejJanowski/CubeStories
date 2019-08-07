@@ -63,7 +63,7 @@ class storyTeller(object):
                 self.storytelling+=pattern
                 self.analysisResults[patternname]=self.storytelling.data
         except Exception as e:
-            print("Storytelling failed: \n"+ patanalysis+ "\nWrong parameters\n" + e)
+            print("Storytelling failed: \n"+ patanalysis+ "\nWrong parameters\n" + repr(e))
     
     def showStory(self):
         return self.analysisResults
