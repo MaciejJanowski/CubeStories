@@ -74,13 +74,12 @@
 				}
 			}
 			},
-		"measures":{
-			"Population":{
-			"measure_title":"Population",
-			"measure_url":"http://data.cso.ie/census-2011/property/population-aged-15-years-and-over"
+			"measures":{
+				"Population15OrOver":{
+					"measure_title":"Population15OrOver",
+					"measure_url":"http://data.cso.ie/census-2011/property/population-aged-15-years-and-over"
+				}
 			}
-
-		}
     },
     "PopulationHighestEducation":{
 		"title":"PopulationHighestEducation",

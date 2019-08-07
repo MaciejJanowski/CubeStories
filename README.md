@@ -27,15 +27,16 @@ Library implements 3 artifacts required for Data analysis
 }
 ```
 
-* Cube Parameters - what properties of cube to be retrieved from endpoint(based on JSON file provided in Metadata Parameters)
+* Cube Parameters - what properties of cube to be retrieved from endpoint(based on JSON file provided in Metadata Parameters).
+Values highlighted as: ```--- --- `` has to be specified by a user - replaced to value only
 ```json  
     {
-    "cube":"One name of Cube ",  
-    "dimensions":["List of dimensions"], 
-    "measures":["List of Measures"], 
+    "cube":"---Key of Cube ---",  
+    "dimensions":["---List of dimensions---"], 
+    "measures":["---List of Measures---"], 
     "hierdimensions": 
-        {"DimKey":{ 
-            "selected_level":"levelkey" 
+        {"---DimKey---":{ 
+            "selected_level":"---levelkey---" 
             }
         }
 ```
@@ -43,15 +44,15 @@ Library implements 3 artifacts required for Data analysis
 * Analysis Pipeline - JSON-based list of pattern analysis to be performed. Each Pattern will have such template provided
 ```json
 { 
-    "PatternName": {  
+    "---PatternName---": {  
 
-        "parameter1":["list of values"],
-        "parameter2":"value"
+        "parameter1":["---list of values---"],
+        "parameter2":"---value---"
     },
     
-    "PatternName":{
-        "pattern1":"pattern1 value",
-        "pattern2":["list of values"]
+    "---PatternName----":{
+        "parameter1":"---pattern1 value---",
+        "parameter2":["---list of values---"]
     }
 }
 
@@ -61,38 +62,44 @@ Library implements 3 artifacts required for Data analysis
 # JSON Template - one of the metadata parameters
 ```json
 {
-    "cube_key" : {
-		"title":"title of cube",
-		"dataset_structure":"URI for cube structure",
+    "---cube_key---" : {
+		"title":"---title of cube---",
+		"dataset_structure":"---URI for cube structure---",
         "dimensions":{
-            "dimension_key":{
-                "dimension_title":"Title of diemnsion",
-                "dimension_url":"URI for dimension",
-                "dimension_prefix":"URI for dimension's values"
+            "---dimension_key---":{
+                "dimension_title":"---Title of diemnsion---",
+                "dimension_url":"---URI for dimension---",
+                "dimension_prefix":"---URI for dimension's values---"
             },
-            "dimension_key":{
-                "dimension_title":"Title of diemnsion",
-                "dimension_url":"URI for dimension",
-                "dimension_prefix":"URI for dimension's values"
+            "---dimension_key---":{
+                "dimension_title":"---Title of diemnsion---",
+                "dimension_url":"---URI for dimension---",
+                "dimension_prefix":"---URI for dimension's values---"
             }
 		},
 		"hierarchical_dimensions":{
-			"dimension_key":{
-                "dimension_title":"Title of diemnsion",
-                "dimension_url":"URI for dimension",
-                "dimension_prefix":"URI for dimension's values",
+			"---dimension_key---":{
+                "dimension_title":"---Title of diemnsion---",
+                "dimension_url":"---URI for dimension---",
+                "dimension_prefix":"---URI for dimension's values---",
 				"dimension_levels":
 				{
-					"level_key":"integer(granularity level)",
-					"level_key":"integer(granularity level)"
+					"---level_key---":{
+              "description":"---description of granularity level---",
+              "granularity":"---integer level of granularity---"
+          },
+					"---level_key---":{
+              "description":"---description of granularity level---",
+              "granularity":"---integer level of granularity---"
+          }
 
 				}
 			}
 		},
 		"measures":{
-			"measure_key":{
-			"measure_title":"Title of measure",
-			"measure_url":"URI for measure"
+			"---measure_key---":{
+			"measure_title":"---Title of measure---",
+			"measure_url":"---URI for measure---"
 			}
 
 		}
@@ -151,10 +158,10 @@ Based on count_type value
     
 ### Attributes
  ```json
- "LeagueTab":{  #League Table 
+ "LeagueTab":{  
         "columns_to_order":["list of columns to order by"],
         "order_type":"type of order by",
-        "number_of_records":5 #amount of records to retrieve
+        "number_of_records":5
     }
  ```
   Parameter                 | Type       | Description   |	
@@ -291,8 +298,8 @@ Available types of comparison ```contrast_type```
 
 ```json
 "StBigDrillDown":{
-    "hierdim_drill_down":{ #Hierarchical dimension with levels to be retrieved
-        "DimKey":["dimlevel1key","dimlevel2key","dimlevel3key"] #Pair [HierarchicalDimensionKey]:[List of Levels to retrieved]
+    "hierdim_drill_down":{ 
+        "Key of hierarchical dimension":["dimlevel1key","dimlevel2key","dimlevel3key"] 
         }
 }
 
@@ -317,7 +324,7 @@ As an output, data will be retrieved in a form of a dictionary, where each datas
 ```json
 "StSmallZoomOut":{
     "hierdim_zoom_out":{ 
-        "DimKey":["dimlevel1key","dimlevel2key","dimlevel3key"] 
+        "Key of hierarchical dimension":["dimlevel1key","dimlevel2key","dimlevel3key"] 
         }
 }
  ```
