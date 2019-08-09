@@ -124,6 +124,7 @@ Values highlighted as: ```--- --- `` has to be specified by a user - replaced to
    * [Analysis By Category](#AnalysisByCategory)
    * [Explore Intersection](#ExploreIntersection)
    * [Narrating Change Over Time](#NarratingChangeOverTime)
+   * [ExploreIntersection](#ExploreIntersection)
 <!--te-->
 # MCounting
 
@@ -188,6 +189,40 @@ Based on sort_type value
 ### Attributes
 ```json
  "IntComp":{
+     "dims_to_compare":"dimension to compare",
+     "meas_to_compare":"measure to compare",
+     "comp_type":"comparison type"
+ }
+
+ ```
+ 
+  Parameter                 | Type       | Description   |	
+  | :------------------------ |:-------------:| :-------------|
+  | dims_to_compare	       |	```String```         | Dimensions, which common part will be investigated
+  | meas_to_compare	       |	```String```         | Measure, which numeric values related to ```dim_to_compare``` will be processed
+  | comp_type	       |	```String```         | Type of comparison to perform
+ 
+### Output 
+Independent from ```comp_type``` selected, output data will have additional column with numerical column ```meas_to_compare``` processed in specific way.
+
+Available types of comparison ```comp_type```
+
+|Comp_type                |  Description   |	
+  | ------------------------ | -------------|
+  | diffmax|difference with max value related to specific textual values from ```dims_to_compare```|
+  | diffmean|difference with arithmetic mean related to specific textual values from ```dims_to_compare```|
+  | diffmin|difference with minimum value related to specific textual values from ```dims_to_compare```|
+
+
+
+
+# ExploreIntersection
+
+ InternalComparison - comparison of numeric values related to textual values within one column
+    
+### Attributes
+```json
+ "IntComp":{
      "dim_to_compare":"dimension to compare",
      "meas_to_compare":"measure to compare",
      "comp_type":"comparison type"
@@ -211,6 +246,7 @@ Available types of comparison ```comp_type```
   | diffmax|difference with max value related to specific textual value|
   | diffmean|difference with arithmetic mean related to specific textual values|
   | diffmin|difference with minimum value related to specific textual value|
+
 
 # ProfileOutliers
 
