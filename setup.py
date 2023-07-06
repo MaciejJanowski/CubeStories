@@ -18,7 +18,7 @@ setup(name='cubestories',
                         'sparql-dataframe==0.3',
                         'datastories',
                         'numpy==1.16.2',
-                        'scipy==1.2.1'],
+                        'scipy==1.10.0'],
       long_description=open('README.md').read(),
       long_description_content_type='text/markdown',
       zip_safe=False)
